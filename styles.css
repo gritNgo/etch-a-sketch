@@ -5,9 +5,15 @@ body {
     align-items: center;
 }
 
-#grid-container {
+#container {
     width: 500px;
     height: 500px;
-    border: 2px solid rgba(255, 217, 0, 0.228);
+    border: 1px solid rgba(255, 217, 0, 0.189);
     display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
 }
+
+#row {
+}
+
