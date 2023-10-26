@@ -1,8 +1,12 @@
 window.onload = () => {
     const gridContainer = document.getElementById("grid-container");
-    const newDiv = document.createElement("div");
+    let square = document.createElement("div");
+    square.setAttribute("id", "square");
+    square.style.cssText = 'width:30px; height:30px; border:2px solid black;';
 
-    
-
-    gridContainer.appendChild(newDiv);
+    singleRow: 
+    for (let i = 0; i <= 16; i++) {        
+        
+        gridContainer.appendChild(square.cloneNode(true));
+    }
 }
