@@ -1,6 +1,8 @@
 const container = document.getElementById("container");
 const rows = document.getElementsByClassName("gridRow");
 const cells = document.getElementsByClassName("cell");
+// const clearBtn = document.createElement("button");
+
 
 function defaultGrid() {
     makeRows(16);
@@ -19,7 +21,12 @@ function makeCells(cellNum) {
         for (j = 0; j < cellNum; j++) {
             let newCell = document.createElement("div");
             rows[j].appendChild(newCell).className = "cell";
+
+            newCell.addEventListener("mouseover", () => {
+                newCell.style.backgroundColor = "black"
+            });
         }
     }
 }
 defaultGrid();
+
