@@ -28,6 +28,7 @@ body {
     margin-right: 2px;
   }
 
-  /* .cell:hover {
-    background-color: black;
-  } */
+  .newGridBtn {
+width: 70px;
+height: 30px; 
+background-color: white; }

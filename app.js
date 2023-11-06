@@ -1,10 +1,25 @@
 const container = document.getElementById("container");
 const rows = document.getElementsByClassName("gridRow");
 const cells = document.getElementsByClassName("cell");
-// const clearBtn = document.createElement("button");
 
 
-function defaultGrid() {
+const newGridBtn = document.createElement("button");
+document.body.appendChild(newGridBtn).className = "newGridBtn";
+newGridBtn.textContent = "New grid";
+
+function getSize(newRows, newColumns) {
+    newRows = prompt(`Enter new number of rows: `);
+    newColumns = prompt(`Enter new number of columns: `);
+
+}
+newGridBtn.addEventListener("click", () => {
+    getSize(newRows, newColumns);
+    console.log(`${newRows}, ${newColumns}`);
+});
+
+
+
+function defaultGrid() {    
     makeRows(16);
     makeCells(16);
 }
