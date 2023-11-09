@@ -6,20 +6,20 @@ ________________
 
 PLAN:
 interface: 
-1. a webpage with a (default) 16 x 16 grid
-2. a button at the top to change the size, that clears and gives 
-new grid in the same total space as before 
+1. a webpage with a (default) 16 x 16 grid that gets colored on hover ✔
+2. a button at the top to change the size, that creates a
+new grid in the original space 
 
 inputs: 
 (TO COLOR)
-1. mouse hover over the divs(mouse enter?)
-2. div (grid square) changing color (by adding new class/changing
-background color using javascript?)
-3. mouse leaving the div (mouse leave?)
+1. mouse hover over the divs
+2. div (grid square) changing color (by changing
+background color using javascript)
 
 (TO CHANGE GRID SIZE)
 1. mouse click on new grid with new size button
-2. mouse click to confirm new width x height inside prompt
+2. enter new number of squares per side inside PROMPT (max 64 x 64)
+3. mouse click to confirm new rows and columns (if no input, do nothing)
 
 
 outputs: 
@@ -27,11 +27,20 @@ outputs:
 1. the divs getting colored in black (default)
 
 (FOR NEW GRID)
-1. prompt to enter the new width for the new grid size (max 64 x 64)
-2. prompt to enter the new height for the new grid size (max 64 x 64)
-3. new grid (in the same space where the default grid was) 
-
+1. new grid (in the same space where the default grid was) 
 
 Divide & Conquer.
 
 
+New Grid button:
+- interface: 
+1. button
+
+-input: 
+1. click event
+
+-output: 
+1. a prompt to enter new number of squares in rows: link this number to rows
+2. a prompt to enter new number of squares in columns: link this number to columns
+3. a new grid of n-size (max 64 x 64) that gets coloured just like the default IN the same space as the dafault
+steps: 
