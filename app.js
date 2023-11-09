@@ -1,17 +1,20 @@
 const container = document.getElementById("container");
 const rows = document.getElementsByClassName("gridRow");
 const cells = document.getElementsByClassName("cell");
-
+let newRows;
+let newCells;
 
 const newGridBtn = document.createElement("button");
 document.body.appendChild(newGridBtn).className = "newGridBtn";
 newGridBtn.textContent = "New grid";
 
 newGridBtn.addEventListener("click", () => {
-    let newRows = prompt(`Enter new number of rows: `);
-    let newCells = prompt(`Enter new number of cells: `);
-    container.innerHTML = '';
-    
+
+    newRows = prompt(`Enter new number of rows: `);
+    if (newRows <= 64) {
+    newCells = prompt(`Enter new number of cells: `);
+    if (newCells <= 64) {
+        container.innerHTML = '';    
     function newGrid() {
         createNewRows(newRows);
         createNewCells(newCells);
@@ -35,7 +38,11 @@ newGridBtn.addEventListener("click", () => {
         }
     }
     newGrid();
-
+    }
+    else {alert("Please enter a number of cells less than 64.")
+    }
+    }
+    else {alert("Please enter a number of rows less than 64.")};    
 });
 
 function defaultGrid() {    
