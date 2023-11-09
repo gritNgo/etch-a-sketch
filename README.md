@@ -1,0 +1,1 @@
+A web version of a 16 x 16 sketchpad grid which is coloured in black on mouse hovering. A button is present that allows a new grid to be created for the same purpose with a max size of 64 x 64.

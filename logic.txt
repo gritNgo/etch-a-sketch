@@ -8,7 +8,7 @@ PLAN:
 interface: 
 1. a webpage with a (default) 16 x 16 grid that gets colored on hover ✔
 2. a button at the top to change the size, that creates a
-new grid in the original space 
+new grid in the original space ✔
 
 inputs: 
 (TO COLOR)
@@ -43,4 +43,3 @@ New Grid button:
 1. a prompt to enter new number of squares in rows: link this number to rows
 2. a prompt to enter new number of squares in columns: link this number to columns
 3. a new grid of n-size (max 64 x 64) that gets coloured just like the default IN the same space as the dafault
-steps: 
